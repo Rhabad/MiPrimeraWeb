@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi primera web</title>
+    <!--algo css-->
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--tablas-->
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Hola beats</td>
+                <td>Gratis</td>
+            </tr>
+            <tr>
+                <td>algo</td>
+                <td>1200</td>
+            </tr>
+            <tr>
+                <td>algo sera por lomenos</td>
+                <td>2000</td>
+            </tr>
+        </tbody>
+        ><tfoot>
+            <td></td>
+            <td>total 3200</td>
+        </tfoot>
+    </table>
+    <!--ul lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <!--ol lista ordena-->
+    <ol>
+        <!--empieza por valor elegido value 50-->
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <!--cambiar estilo de la enumeracion.
+                    listas sobre listas :D-->
+                <li style="list-style-type: lower-alpha;">sub elemento1</li>
+                <li>sub elemento2</li>
+                <li>sub elemento3</li>
+            </ol>
+        </li>
+    </ol>
+
+
+
+
+
+
+    <form action="/formulario" method="post">
+        <label for = "nombre">Nombre</label>
+        <input value="valorpordefecto" type = "text" id = "nombre" name = "nombre" placeholder="mi nombre..."/>
+        <!--si presiono en Nombre agarra foco
+            en el campo de texto
+        submit  boton
+        text  en lo que era, si lo omitimos sera
+                como que le estuvieran pasando
+                la propiedad de type text
+        email  tipo email
+        password  ocultara valor colocado
+        radio  boton de radio, un circulito
+        checkbox  casillas donde podemos clicear
+        file   seleccionar archivo-->
+
+        <br>
+        <label for = "apellido">Apellido</label>
+        <input value="valorpordefect2" type = "text" id = "apellido" name = "apellido" placeholder="mi apellido..."/>
+        <br>
+        <label for="comentario">Comentario</label>
+        <textarea cols="50" rows="10" id = "comentario" placeholder="Ingrese comentario" name="comentario">valorpordefecto3</textarea>
+        <br>
+        <!--tomara todos los valores de nuestros 
+        campos y los enviara al servidor
+        lo enviera a donde nosotros queramos
+        esto ultimo lo hacemos en la etiqueta
+        de form
+           <input type="submit" /> -->
+        
+        <!--botones
+            type
+            button   botones  debemos especificar 
+                    comportamiento
+            reset   dejar el formulario con valores
+                    que tenia inicialmente
+            submit   al crearlo en la etiqueta
+                    form este tomara por defecto el
+                    valor de submit-->
+        <button type="button"><img src = "img/ungato.avif" height="50">Tipo boton</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+
+    </form>
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercero heading</h3>
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi quinto heading</h5>
+    <h6>Mi sexto heading, solo se pueden 6</h6>
+    <p>etiqueta de parrafo.
+        lasldalsdlasld
+    </p>
+    <p>texto en distintos parrafos</p>
+
+    <hr> separacion
+
+    <h2>algo</h2>
+    <p>algo de texto aqui, <span style = "color:blue">tiene un poco</span> 
+        mas de <br>
+        ya que quiero escribir mas
+    </p>
+    <!--Hicimos trampa y usamos algo de CSS, el
+    objetivo de la etiqueta spam es para poder 
+    identificar un texto
+    con etiqueta br da un salto de linea.-->
+    <!--etiqueta de comentario, es un comentario
+        no aparecera en el explorador-->
+    
+
+    <a target = "_blank" href = "https://www.google.com">ir a google</atarget>    
+    <!--te redirecciona a otra web dentro del mismo
+        navegador
+        el target es para que te lo abra en una nueva
+        pagina-->
+    
+    <!--para mostrarles imagenes-->
+    <img src = "img/ungato.avif" height = "400"/>
+    <!--src = "https://www.rutaalaimagen.com 
+        asi o como esta colocado-->
+    <!--el tamaño de ancho con width
+        alto con height
+        si colocas unas sola se dimensia
+        sola la otra dimension-->
+
+
+    
+</body>
+</html>
